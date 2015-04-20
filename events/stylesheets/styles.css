@@ -1,0 +1,568 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+@font-face {
+font-family: Nova Flat;font-weight:bold;
+src: url("../../fonts/NovaFlat.ttf") format("truetype");
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+body{
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+ li{
+	list-style: none;
+ }
+ input[type="button"],button{
+	margin: 0;
+	color: #fff;
+	border: none;
+	background: #0665a2;
+	font-family: Nova Flat;
+	padding: 5px;
+	border-radius: 2px;
+}
+label {
+	padding: 5px;
+	color: #3a3f43;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 4px;
+}
+ /* Header */
+ .header img{
+   position: fixed;
+   top: 0%;
+   z-index: 10;
+ }
+ .header img{
+    left: 50%;
+	margin-left: -500px;
+ }
+ .eventsheader {
+	margin: 0 auto;
+	height: 70px;
+	width: 960px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+.logo {
+	text-align: center;
+	border-radius: 3px;
+	background-color: #515558;
+	width: 200px;
+	padding: 5px 0;
+	margin: 0 auto;
+}
+.logo h1 {
+	color: #fff;
+	font-weight: normal;
+	font-family: "Alfa Slab One", Arial, sans-serif;
+	margin-bottom: 0;
+}
+.jigyasaharley{
+	width: 240px;
+	height: 140px;
+}
+.jigyasaharley img{
+	position:fixed;
+	top:0%;
+	left: 15%;
+	width: 240px;
+	height: 140px;
+	z-index: 30;
+}
+/* Navgation */
+.nav-menu, 
+.portfolio > figure.columns {
+	display: none;
+}
+
+.nav-menu:checked + label {
+	color: #fff;
+	background-color: #3a3f43;
+	border-radius: 3px;
+}
+#all:checked ~ .portfolio .all,
+#makerparty:checked ~ .portfolio .makerparty,
+#innovation:checked ~ .portfolio .innovation,
+#robofloor:checked ~ .portfolio .robofloor,
+#softarena:checked ~ .portfolio .softarena, 
+#mindware:checked ~ .portfolio .mindware, 
+#literaryarena:checked ~ .portfolio .literaryarena, 
+#langames:checked ~ .portfolio .langames
+{
+	display: block;
+}
+
+/* Portfolio */
+.portfolio {
+	margin-top: 20px;
+}
+.portfolio .four.columns {
+	width: 240px;
+	margin-right: 0;
+	margin-left: 0;
+}
+.portfolio > figure {
+	position: relative;
+	overflow: hidden;
+	height: 240px;
+}
+.innovation{
+	background: url("../images/in.jpg");
+}
+.maker{
+	background: url("../images/makerparty.jpg");
+}
+.dirtrace{
+	background: url("../images/dirtrace.jpg");
+}
+.robosoccer{
+	background: url("../images/robosoccer.jpg");
+}
+.linefollower{
+	background: url("../images/linefollower1.jpg");
+}
+.robowar{
+	background: url("../images/robowar.jpg");
+}
+.bonditquick{
+	background: url("../images/bonditquick.jpg");
+}
+.waterrocket{
+	background: url("../images/waterrocket.png");
+}
+.componentidentification{
+	background: url("../images/ci.jpg");
+}
+.logohunt{
+	background: url("../images/logo-hunt.jpg");
+}
+.socialstreet{
+	background: url("../images/socialstreet.jpg");
+}
+.algovilla{
+	background: url("../images/algorithm.png");
+}
+.codeemania{
+	background: url("../images/image-12.jpg");
+}
+.webmaker{
+	background: url("../images/web.jpg");
+}
+.bluffmaster{
+	background: url("../images/bluff.png");
+}
+.junkyard{
+	background: url("../images/junkyard.jpg");
+}
+.remodeling{
+	background: url("../images/cuttodesign.jpg");
+}
+.woodstock{
+	background: url("../images/woodstock.png");
+}
+.aptimania{
+	background: url("../images/aptimania.png");
+}
+.spellbee{
+	background: url("../images/spellbee.jpg");
+}
+.abhivyakti{
+	background: url("../images/abhivyakti.jpg");
+}
+.warofwords{
+	background: url("../images/warofwords.jpg");
+}
+.creativewriting{
+	background: url("../images/creativewriting.jpg");
+}
+.vidvata{
+	background: url("../images/vidvata.jpg");
+}
+.paperbattle{
+	background: url("../images/paperbattle.jpeg");
+}
+.fifa{
+	background: url("../images/fifa13.jpg");
+}
+.nfs{
+	background: url("../images/nfs.jpg");
+}
+.virtualtennis{
+	background: url("../images/virtualtennis.jpg");
+}
+.tekken{
+	background: url("../images/tekken.jpg");
+}
+.dota{
+	background: url("../images/Dota.jpg");
+}
+.counterstrike{
+	background: url("../images/cs.jpg");
+}
+.portfolio > figure img {
+	max-width: 100%;
+	display: block;
+}
+.portfolio figcaption {
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+
+	left: 0;
+	top: 0;
+
+	background-color:#0B1627;
+	padding: 10%;
+
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%);
+
+	-webkit-transition: all 350ms;
+	-moz-transition: all 350ms;
+	-o-transition: all 350ms;
+	transition: all 350ms;
+}
+.portfolio figcaption h4 {
+	font-family: Trebuchet MS, sans-serif;
+	color: #fff;
+}
+.portfolio figcaption p {
+	font-size: 0.929em;
+	color: #fff;
+}
+.portfolio > figure:hover figcaption {
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
+}
+
+/* Footer Section */
+.footer {
+	border-top: 1px solid #ccc;
+	margin-top: 28px;
+	padding: 28px 0;
+}
+
+.contact {
+	float: right;
+}
+.contact, .contact a {
+	color: #ccc;
+}
+.contact ul li:before {
+	content: '';
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-image: url('../images/contact.png');
+	margin-right: 0.1em;
+}
+.contact-name:before {
+	background-position: 0 -29px; 
+}
+.contact-phone:before {
+	background-position: 0 -63px; 
+} 
+.contact-email:before{ 
+	background-position: 0 5px;
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+
+	.container {
+		width: 100%;
+	}
+
+	.portfolio .four.columns { 
+    	width: 25%;
+    }
+	.portfolio .all {
+		margin-bottom: 15px;
+	}
+	.portfolio > figure:before {
+		content: attr(data-category);
+		font-size: 1em;
+		padding: 8px;
+		width: 100%;
+		color: #fff;
+		display: block;
+		font-weight: bold;
+		text-transform: capitalize;
+		background-color: rgba(42,47,51,0.8);
+		position: absolute;
+	}
+	.portfolio figcaption {
+		position: relative;
+		opacity: 1;
+
+		-webkit-transform: translateX(0%);
+		-moz-transform: translateX(0%);
+		-ms-transform: translateX(0%);
+		-o-transform: translateX(0%);
+		transform: translateX(0%);
+
+		background-color: #3a3f43;
+	}
+	.portfolio figure:nth-child(odd) figcaption {
+		background-color: #2a2f33;
+	}
+	.footer {
+		border-top: 1px solid #ccc;
+		margin-top: 42px;
+		padding: 28px;
+	}
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .portfolio .four.columns { 
+    	width: 50%;
+    }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	.container {
+		width: 100%;
+	}
+    .portfolio .four.columns  { 
+    	width: 100%;
+    }
+    .footer {
+    	text-align: center;
+    }
+    
+    .contact, .social {
+    	float: none;
+    	display: block;
+    }
+
+}
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff; /* change if the mask should have another color then white */
+    z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../images/j.png); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+@-webkit-keyframes rotate /* Safari and Chrome */ {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotate {
+  -webkit-animation: rotate 2s linear infinite;
+  -moz-animation: rotate 2s linear infinite;
+  -ms-animation: rotate 2s linear infinite;
+  -o-animation: rotate2s linear infinite;
+  animation: rotate 2s linear infinite;
+}
+#nav-trigger,#label-nav,.navigation{
+	display: none;
+}
+@media (max-width: 600px) {
+			#nav-trigger,#label-nav,.navigation{
+				display: block;
+			}
+			.innovation,.maker,.dirtrace,.graviton,.linefollower,.robowar,.bonditquick,.waterrocket,
+			.logohunt,.socialstreet,.algovilla,.codeemania,.webmaker,.bluffmaster,.junkyard,.remodeling,
+			.woodstock,.aptimania,.spellbee,.abhivyakti,.warofwords,.creativewriting,.vidvata,.paperbattle,
+			.counterstrike,.fifa,.virtualtennis,.dota,.nfs,.tekken{
+				display: none;
+			}
+			.portfolio > figure{
+				height: 18%;
+			}
+			.eventsheader{
+				width: auto;
+			}
+			.header{
+					display: none;
+			}
+			.jigyasaharley{
+				margin: 0 auto;
+				display: block;
+			}
+			.jigyasaharley img{
+				position: relative;
+				top: 0%;
+				left: initial;
+			}
+			/* Site Wrapper - Everything that isn't navigation */
+			.site-wrap {
+			  /* Critical position and size styles */
+			  min-height: 100%;
+			  min-width: 100%;
+			  background-color: white; /* Needs a background or else the nav will show through */
+			  position: relative;
+			  top: 0;
+			  bottom: 100%;
+			  left: 0;
+			  z-index: 1;
+			}
+			.maincontent{
+				width: 240px;
+			}
+			.nav-trigger:checked ~ .site-wrap {
+			left: 200px;
+			box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+			}
+			
+			/* Make the Magic Happen */
+			.nav-trigger + label, .site-wrap {
+			transition: left 0.2s;
+			}
+}
+/* Navigation Menu - Background */
+.navigation {
+  /* critical sizing and position styles */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  
+  /* non-critical appearance styles */
+  list-style: none;
+  background: #111;
+}
+
+/* Navigation Menu - List items */
+.nav-item {
+  /* non-critical appearance styles */
+  width: 200px;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #000;
+}
+
+.nav-item a {
+  /* non-critical appearance styles */
+  display: block;
+  padding: 1em;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.2s, background 0.5s;
+}
+
+.nav-item a:hover {
+  color: #c74438;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
+}
+
+/* Nav Trigger */
+.nav-trigger {
+  /* critical styles - hide the checkbox input */
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+  /* critical positioning styles */
+  position: fixed;
+  left: 15px; top: 15px;
+  z-index: 2;
+  
+  /* non-critical apperance styles */
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+  background-size: contain;
+}
+
+
+.nav-trigger:checked + label {
+  background-image: url(../img/x.png);
+  height: 45px;
+  width: 45px;
+  left: 215px;
+}
+
+
+#contactus{
+	
+}
+body {
+	/* Without this, the body has excess horizontal scroll when the menu is open */
+  overflow-x: hidden;
+}
